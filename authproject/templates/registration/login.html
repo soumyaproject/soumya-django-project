@@ -1,0 +1,11 @@
+<html>
+    {% extends 'testapp/base.html' %}
+    {% block body_block %}
+    <h2> welcome to my log in page</h2>
+    <form method='POST'>
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type='submit' value='login'>
+    </form>
+        {% endblock %}
+</html>
